@@ -10,18 +10,28 @@ A local split-pane LaTeX editor with live HTML preview and PDF export.
 
 ## Quick start
 
-### 1. Backend
+### Single command (recommended)
 
 ```bash
+cd frontend
+npm install
+npm run start
+```
+
+This runs both backend and frontend. Open `http://localhost:5173`.
+
+### Manual startup (two terminals)
+
+**Terminal 1 - Backend:**
+```bash
 cd backend
-pip install -r requirements.txt
-python main.py
+pip3 install -r requirements.txt
+python3 main.py
 ```
 
 The API listens on `http://127.0.0.1:8000`.
 
-### 2. Frontend
-
+**Terminal 2 - Frontend:**
 ```bash
 cd frontend
 npm install
